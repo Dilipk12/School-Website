@@ -1,6 +1,7 @@
 import { RiTwitterXFill } from 'react-icons/ri';
 
 function Card() {
+    
     const cardsdata = [
         {
             icon: <RiTwitterXFill />,

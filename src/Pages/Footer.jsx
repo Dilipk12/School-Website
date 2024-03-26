@@ -1,8 +1,9 @@
+import { Link } from 'react-router-dom'
+
 import { RiTwitterXFill } from 'react-icons/ri'
 import { BiLogoLinkedin } from 'react-icons/bi'
 import { FaFacebook, FaInstagram } from 'react-icons/fa'
-import { Link } from 'react-router-dom'
-import Logo from '../Components/Logo'
+
 
 function Footer() {
   return (
