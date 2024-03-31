@@ -6,7 +6,7 @@ import About from './Pages/About';
 import Home from './Pages/Home';
 import Footer from './Pages/Footer';
 import Header from './Components/Header';
-import Feature from './Pages/feature';
+import Feature from './Pages/Feature';
 import Gallery from './Pages/Gallery';
 
 
