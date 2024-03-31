@@ -1,4 +1,4 @@
-import React from 'react'
+import { motion } from 'framer-motion'
 
 function Gallery() {
 
@@ -18,21 +18,41 @@ function Gallery() {
 
     ]
 
+    const staggerVariants = {
+        hidden: { scale: 0 },
+        show: {
+            scale: 1,
+            transition: {
+                staggerChildren: .5,
+            }
+        }
+    }
+
     return (
-        <section className="">
-            <div className="flex items-center justify-center w-full p-16 sm:p-24 text-3xl sm:text-5xl font-bold text-gray-200 bg-gradient-to-r from-lime-500 to-green-500 rounded-xl" >Gallery</div>
+        <section>
+            <motion.div
+                initial={{ scale: 0, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ duration: .5 }}
+                className="flex items-center justify-center w-full p-16 sm:p-24 text-3xl sm:text-5xl font-bold text-gray-200 bg-black rounded-xl" >Gallery</motion.div>
 
 
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 pt-20 py-16">
+            <motion.div
+                variants={staggerVariants}
+                initial="hidden"
+                animate="show"
+                className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 pt-20 py-16">
                 {
                     imagedata.map((img, id) => {
-                        return (<div key={id}>
+                        return (<motion.div
+                            variants={{ hidden: { scale: 0 }, show: { scale: 1 } }}
+                            key={id}>
                             <img className="h-auto max-w-full rounded-lg" src={img.imgsrc} alt="image not found" />
-                        </div>)
+                        </motion.div>)
                     })
                 }
 
-            </div>
+            </motion.div>
 
         </section>
     )

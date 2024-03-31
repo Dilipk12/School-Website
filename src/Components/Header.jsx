@@ -34,10 +34,11 @@ function Header() {
                     <button className='px-8 py-1 rounded-full bg-[#21383e] scale-100 hover:scale-110 duration-150 text-slate-100 text-xl font-semibold'>Login</button>
                 </div>
 
-                {/* Toggle buttons  */}
+                {/* Toggle Menu buttons  */}
                 <div
+                    
                     onClick={ToggleNavbar}
-                    className="md:hidden block text-3xl font-bold cursor-pointer">
+                    className="md:hidden block text-3xl font-bold cursor-pointer z-10">
                     {
                         isOpen ? <HiMenu /> : <RiCloseFill />
                     }
@@ -47,7 +48,8 @@ function Header() {
             {/* Toggle Nav  */}
             {
                 !isOpen && (
-                    <div className='md:hidden flex basis-full items-center flex-col absolute top-20 right-16 bg-orange-300 p-10 gap-y-2'><Nav /></div>
+                    <div 
+                    className='md:hidden h-screen w-full flex basis-full items-center flex-col justify-center absolute top-10 left-0 -mt-14 rounded-3xl bg-orange-300 p-10 gap-y-2'><Nav /></div>
                 )
             }
         </motion.header>
