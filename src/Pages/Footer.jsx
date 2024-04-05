@@ -8,7 +8,7 @@ import { FaFacebook, FaInstagram } from 'react-icons/fa'
 function Footer() {
   return (
     <>
-      <footer className="bg-[#1d1b1c] flex flex-wrap gap-5 lg:gap-3 items-start justify-start lg:justify-around  py-20 px-10 rounded-t-2xl">
+      <footer className="bg-gradient-to-b from-slate-900 to-slate-950 flex flex-wrap gap-5 lg:gap-3 items-start justify-start lg:justify-around lg:-mx-8  py-20 px-10 rounded-t-2xl">
 
         {/* about category links */}
         <div>
@@ -56,7 +56,7 @@ function Footer() {
       </footer>
 
       {/* Copyright content */}
-      <div className="bg-black p-8">
+      <div className="bg-blue-950 p-8 lg:-mx-8">
         <p className='text-sm text-center text-white sm:text-md '>© Copyright <span className='font-bold cursor-pointer'>Techstrack</span>. All Rights Reserved</p>
       </div>
     </>

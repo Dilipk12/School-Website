@@ -22,7 +22,7 @@ function Header() {
             initial={{ y: -100 }}
             animate={{ y: 0 }}
             transition={{ duration: 1 }}
-            className='sticky top-5 left-0 rounded-full flex flex-wrap items-center justify-between w-full bg-white/30 backdrop-blur-md px-12 py-4'>
+            className='sticky top-5 left-0 rounded-full z-50 flex flex-wrap items-center justify-between w-full bg-white/30 backdrop-blur-md px-12 py-4'>
 
             <Logo />
 
@@ -31,7 +31,7 @@ function Header() {
                 {/* Nav links content */}
                 <div className="hidden md:flex flex-wrap items-center justify-center gap-x-10">
                     <Nav />
-                    <button className='px-8 py-1 rounded-full bg-[#21383e] scale-100 hover:scale-110 duration-150 text-slate-100 text-xl font-semibold'>Login</button>
+                    <button className='px-8 py-1 rounded-full bg-black scale-100 hover:scale-110 duration-150 text-slate-100 text-xl font-semibold'>Login</button>
                 </div>
 
                 {/* Toggle Menu buttons  */}

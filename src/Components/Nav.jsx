@@ -14,7 +14,7 @@ function Nav() {
       {
         menuitems.map((menuitem, id) => {
           return (
-            <NavLink to={menuitem.path} key={id} className='text-5xl mb-5 md:mb-0 md:text-xl font-semibold text-[#21383e] hover:text-[#da4a03] duration-300'> {menuitem.navtitle}</NavLink>
+            <NavLink to={menuitem.path} key={id} className='text-5xl mb-5 md:mb-0 md:text-xl font-semibold text-black hover:text-[#da4a03] duration-300'> {menuitem.navtitle}</NavLink>
           )
         })
       }

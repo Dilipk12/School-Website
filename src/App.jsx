@@ -1,5 +1,5 @@
 
-import {Route, Routes, useLocation} from 'react-router-dom'
+import { Route, Routes, useLocation } from 'react-router-dom'
 
 import Contact from './Pages/Contact';
 import About from './Pages/About';
@@ -11,23 +11,23 @@ import Gallery from './Pages/Gallery';
 
 
 function App() {
- 
+
   const location = useLocation();
   return (
     <>
-   
-    <Header />
-   
-    <Routes location={location} key={location.pathname}>
-      <Route path='/*' element={<Home/>} />
-      <Route path='/about' element={<About/>} />
-      <Route path='/contact' element={<Contact/>} />
-      <Route path='/gallery' element={<Gallery/>} />
-      <Route path='/footer' element={<Footer/>} />
-    </Routes>
 
-    <Feature/>
-    <Footer/>
+      <Header />
+
+      <Routes location={location} key={location.pathname}>
+        <Route path='/*' element={<Home />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/gallery' element={<Gallery />} />
+        <Route path='/footer' element={<Footer />} />
+      </Routes>
+
+      <Feature />
+      <Footer />
     </>
   )
 }

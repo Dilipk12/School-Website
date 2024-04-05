@@ -7,22 +7,22 @@ function Card() {
         {
             icon: <RiTwitterXFill />,
             para: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, reiciendis adipisicing elit. Deserunt, reiciendis.',
-            bgcolor: 'bg-blue-300'
+            bgcolor: 'bg-gradient-to-br from-rose-500 to-slate-100'
         },
         {
             icon: <RiTwitterXFill />,
             para: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, reiciendis adipisicing elit. Deserunt, reiciendis.',
-            bgcolor: 'bg-red-300'
+            bgcolor: 'bg-gradient-to-br from-teal-500 to-slate-100'
         },
         {
             icon: <RiTwitterXFill />,
             para: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, reiciendis adipisicing elit. Deserunt, reiciendis.',
-            bgcolor: 'bg-yellow-200'
+            bgcolor: 'bg-gradient-to-br from-yellow-500 to-slate-100'
         },
         {
             icon: <RiTwitterXFill />,
             para: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, reiciendis adipisicing elit. Deserunt, reiciendis.',
-            bgcolor: 'bg-violet-300'
+            bgcolor: 'bg-gradient-to-br from-violet-500 to-slate-100'
         }
     ]
     return (
