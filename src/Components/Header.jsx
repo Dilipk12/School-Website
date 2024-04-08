@@ -22,7 +22,7 @@ function Header() {
             initial={{ y: -100 }}
             animate={{ y: 0 }}
             transition={{ duration: 1 }}
-            className='sticky top-5 left-0 rounded-full z-50 flex flex-wrap items-center justify-between w-full bg-white/30 backdrop-blur-md px-12 py-4'>
+            className='sticky top-5 left-0 rounded-full z-50 flex flex-wrap items-center justify-between w-full bg-white/30 backdrop-blur-md px-10 sm:px-12 py-4'>
 
             <Logo />
 
@@ -40,7 +40,7 @@ function Header() {
                     onClick={ToggleNavbar}
                     className="md:hidden block text-3xl font-bold cursor-pointer z-10">
                     {
-                        isOpen ? <HiMenu /> : <RiCloseFill />
+                        isOpen ? <HiMenu /> : <RiCloseFill className='text-white' />
                     }
                 </div>
             </div>
@@ -49,7 +49,7 @@ function Header() {
             {
                 !isOpen && (
                     <div 
-                    className='md:hidden h-screen w-full flex basis-full items-center flex-col justify-center absolute top-10 left-0 -mt-14 rounded-3xl bg-orange-300 p-10 gap-y-2'><Nav /></div>
+                    className='md:hidden h-screen w-full flex basis-full items-center flex-col justify-center absolute top-1/2 left-0 -mt-12 rounded-3xl bg-black p-10 gap-y-2'><Nav /></div>
                 )
             }
         </motion.header>

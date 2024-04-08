@@ -16,11 +16,11 @@ function Feature() {
 
 
     return (
-        <section className=' relative w-full px-5 flex flex-col justify-center py-16'>
+        <section className='bg-white relative w-full px-5 flex flex-col justify-center py-24 mb-16'>
             <svg
                 viewBox="0 0 52 24"
                 fill="currentColor"
-                className="absolute -top-8 left-48 z-0 w-32 -mt-8 -ml-16 text-blue-gray-100 lg:w-32 lg:mt-16"
+                className="hidden lg:block absolute -top-0 left-48 z-0 w-32 -mt-8 -ml-16 text-blue-gray-100 lg:w-32 lg:mt-16"
             >
                 <defs>
                     <pattern
@@ -42,7 +42,7 @@ function Feature() {
             <svg
                 viewBox="0 0 52 24"
                 fill="currentColor"
-                className="absolute top-14 right-32 z-0 w-32 -mt-8 -ml-16 text-blue-gray-100 lg:w-32 lg:mt-16"
+                className="hidden lg:block absolute top-20 right-32 z-0 w-32 -mt-8 -ml-16 text-blue-gray-100 lg:w-32 lg:mt-16"
             >
                 <defs>
                     <pattern
@@ -75,7 +75,7 @@ function Feature() {
                 initial="hidden"
                 whileInView="show"
                 // viewport={{ once: true }}
-                className="flex flex-wrap justify-center items-center py-16 w-full">
+                className="flex flex-wrap justify-center items-center pt-16 w-full">
                 <Card />
             </motion.div>
         </section>

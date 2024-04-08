@@ -8,8 +8,8 @@ import { FaFacebook, FaInstagram } from 'react-icons/fa'
 function Footer() {
   return (
     <>
-      <footer className="bg-gradient-to-b from-slate-900 to-slate-950 flex flex-wrap gap-5 lg:gap-3 items-start justify-start lg:justify-around lg:-mx-8  py-20 px-10 rounded-t-2xl">
-
+      <footer className="bg-gradient-to-b from-slate-900 to-slate-950 flex flex-wrap gap-5 lg:gap-3 items-start justify-start lg:justify-around lg:-mx-8  pt-32 pb-20 px-10 rounded-t-2xl">
+        
         {/* about category links */}
         <div>
           <div className='space-y-3'>
@@ -43,7 +43,7 @@ function Footer() {
           </div>
         </div>
 
-       
+
         {/* contact category links */}
         <div className="flex flex-col h-full justify-center gap-3">
           <h1 className='font-bold text-2xl text-white pb-2'>Contact Us</h1>
