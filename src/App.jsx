@@ -10,6 +10,7 @@ import Feature from './Pages/Feature';
 import Gallery from './Pages/Gallery';
 import StuBirthday from './Pages/StuBirthday';
 import JoinUs from './Pages/JoinUs';
+import Topbtn from './Components/Topbtn';
 
 
 function App() {
@@ -19,6 +20,8 @@ function App() {
     <>
       {/* Navbar Secion*/}
       <Header />
+
+     
 
       <Routes location={location} key={location.pathname}>
         <Route path='/*' element={<Home />} />
@@ -40,7 +43,8 @@ function App() {
       
 
 
-    
+     {/* Bottom to Top Button */}
+     <Topbtn />
 
 
 

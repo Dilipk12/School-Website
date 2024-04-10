@@ -48,8 +48,8 @@ function Header() {
             {/* Toggle Nav  */}
             {
                 !isOpen && (
-                    <div 
-                    className='md:hidden h-screen w-full flex basis-full items-center flex-col justify-center absolute top-1/2 left-0 -mt-12 rounded-3xl bg-black p-10 gap-y-2'><Nav /></div>
+                    <div
+                    className='md:hidden h-screen w-full flex basis-full items-center flex-col justify-center absolute top-1/2 left-0 -mt-12 rounded-3xl bg-black p-10 gap-y-4'><Nav setIsOpen={setIsOpen} /></div>
                 )
             }
         </motion.header>

@@ -6,11 +6,16 @@ import { FaFacebook, FaInstagram } from 'react-icons/fa'
 
 
 function Footer() {
+
+  const GotoTopbtn = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }
+
   return (
     <>
       <footer className="bg-gradient-to-b from-slate-900 to-slate-950 flex flex-wrap gap-5 lg:gap-3 items-start justify-start lg:justify-around lg:-mx-8  pt-32 pb-20 px-10 rounded-t-2xl">
         
-        {/* about category links */}
+        {/* about category */}
         <div>
           <div className='space-y-3'>
             <h1 className='text-4xl font-bold text-[#da4a03] '>My School</h1>
@@ -29,10 +34,10 @@ function Footer() {
         {/* menu category links */}
         <div className="flex flex-col h-full justify-center gap-3">
           <h1 className='font-bold text-2xl text-white pb-2'>Menu</h1>
-          <Link to="/" className='cursor-pointer font-semibold text-md hover:text-[#da4a03] duration-300 text-slate-300'>Home</Link>
-          <Link to="about" className='cursor-pointer font-semibold text-md hover:text-[#da4a03] duration-300 text-slate-300'>Feature</Link>
-          <Link to="services" className='cursor-pointer font-semibold text-md hover:text-[#da4a03] duration-300 text-slate-300'>Gallery</Link>
-          <Link to="contact" className='cursor-pointer font-semibold text-md hover:text-[#da4a03] duration-300 text-slate-300'>Contact Us</Link>
+          <Link to="/" onClick={GotoTopbtn} className='cursor-pointer font-semibold text-md hover:text-[#da4a03] duration-300 text-slate-300'>Home</Link>
+          <Link to="/about" onClick={GotoTopbtn} className='cursor-pointer font-semibold text-md hover:text-[#da4a03] duration-300 text-slate-300'>About</Link>
+          <Link to="/gallery" onClick={GotoTopbtn} className='cursor-pointer font-semibold text-md hover:text-[#da4a03] duration-300 text-slate-300'>Gallery</Link>
+          <Link to="/contact" onClick={GotoTopbtn} className='cursor-pointer font-semibold text-md hover:text-[#da4a03] duration-300 text-slate-300'>Contact</Link>
         </div>
 
         {/* map category links */}
