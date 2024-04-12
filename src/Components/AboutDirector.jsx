@@ -26,8 +26,9 @@ const AboutDirector = () => {
                 />
             </svg>
             <motion.div
-                initial={{ x: -600 }}
-                animate={{ x: 0 }}
+                initial={{ y: 200, opacity:0 }}
+                whileInView={{ y: 0, opacity:1 }}
+                viewport={{ once: true }}
                 transition={{
                     duration: 1,
 
@@ -37,8 +38,9 @@ const AboutDirector = () => {
             </motion.div>
 
             <motion.div
-                initial={{ x: 600 }}
-                animate={{ x: 0 }}
+                initial={{ y: 300, opacity:0 }}
+                whileInView={{ y: 0, opacity:1 }}
+                viewport={{ once: true }}
                 transition={{
                     duration: 1,
 

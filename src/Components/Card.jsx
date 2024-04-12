@@ -31,7 +31,7 @@ function Card() {
                 cardsdata.map((data, id) => {
                     return (
                         <motion.div
-                            variants={{ hidden: { opacity: 0 }, show: { opacity: 1 } }}
+                            variants={{ hidden: { opacity: 0,scale:0 }, show: { opacity: 1,scale:1 } }}
                             key={id} className={`w-72 h-[350px]  ${data.bgcolor} p-8`}>
                             <div className='text-5xl flex items-center justify-center py-5'>{data.icon}</div>
                             <p className='font-bold h-1/2 py-5 text-center'>{data.para}</p>

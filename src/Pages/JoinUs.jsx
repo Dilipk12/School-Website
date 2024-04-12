@@ -1,26 +1,33 @@
-
+import { motion } from "framer-motion"
 const JoinUs = () => {
     return (
         <section className="bg-white relative py-12 lg:py-24 rounded-xl">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col-reverse lg:flex-row items-center justify-center">
                 {/* Image Section */}
-                <div className="lg:w-1/2 mb-10 lg:mb-0 z-10">
+                <motion.div 
+                initial={{ scale: 0, opacity: 0 }}
+                whileInView={{ scale: 1, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1, delay: .5 }}
+                className="lg:w-1/2 mb-10 lg:mb-0 z-10">
                     <img
                         className="rounded shadow-lg"
                         src="https://img.freepik.com/premium-photo/teenager-student-girl-yellow-pointing-finger-side_1368-40175.jpg"
                         alt="Contact"
                     />
-                </div>
+                </motion.div>
                 {/* Form Section */}
-                <div className="lg:w-1/2 z-10">
+                <motion.div 
+                initial={{ scale: 0, opacity: 0 }}
+                whileInView={{ scale: 1, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1 }}
+                className="lg:w-1/2 z-10">
                     <div className="bg-black shadow-md rounded-xl px-8 py-8 lg:py-16">
                         <h2 className="text-2xl font-bold mb-6 text-white">Join Us</h2>
                         <form>
                             <div className="mb-4">
-                                <label
-                                    className="block text-white text-sm font-bold mb-2"
-                                    htmlFor="name"
-                                >
+                                <label className="block text-white text-sm font-bold mb-2" htmlFor="name">
                                     Name
                                 </label>
                                 <input
@@ -68,7 +75,7 @@ const JoinUs = () => {
                             </div>
                         </form>
                     </div>
-                </div>
+                </motion.div>
             </div>
 
         </section>

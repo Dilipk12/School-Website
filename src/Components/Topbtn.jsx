@@ -30,7 +30,7 @@ const Topbtn = () => {
         <>
             {
                 isVisible && (
-                    <div className='z-20 w-10 h-10 rounded-full fixed bottom-7 right-5 animate-bounce hover:animate-none cursor-pointer flex justify-center items-center text-2xl text-white bg-gradient-to-r from-yellow-500 to-orange-600' onClick={GotoTopbtn}>
+                    <div className='z-20 w-10 sm:w-14 h-10 sm:h-14 rounded-full fixed bottom-7 right-10 animate-bounce hover:animate-none cursor-pointer flex justify-center items-center text-2xl text-white bg-gradient-to-r from-yellow-500 to-orange-600' onClick={GotoTopbtn}>
                         <IoMdArrowUp />
                     </div>
                 )

@@ -6,10 +6,7 @@ import About from './Pages/About';
 import Home from './Pages/Home';
 import Footer from './Pages/Footer';
 import Header from './Components/Header';
-import Feature from './Pages/Feature';
 import Gallery from './Pages/Gallery';
-import StuBirthday from './Pages/StuBirthday';
-import JoinUs from './Pages/JoinUs';
 import Topbtn from './Components/Topbtn';
 
 
@@ -21,8 +18,6 @@ function App() {
       {/* Navbar Secion*/}
       <Header />
 
-     
-
       <Routes location={location} key={location.pathname}>
         <Route path='/*' element={<Home />} />
         <Route path='/about' element={<About />} />
@@ -31,25 +26,12 @@ function App() {
         <Route path='/footer' element={<Footer />} />
       </Routes>
 
-      {/* Join us Secion */}
-      <JoinUs />
-
-      {/* Birthday Card Secion*/}
-      <StuBirthday />
-
-      {/* Feature Card Secion*/}
-      <Feature />
-
-      
-
-
-     {/* Bottom to Top Button */}
-     <Topbtn />
-
-
+      {/* Bottom to Top Button */}
+      <Topbtn />
 
       {/* Footer Secion*/}
       <Footer />
+      
     </>
   )
 }

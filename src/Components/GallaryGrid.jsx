@@ -1,5 +1,5 @@
 import React from 'react'
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 
 const GallaryGrid = () => {
     const imagedata = [
@@ -30,9 +30,10 @@ const GallaryGrid = () => {
         <motion.div
             variants={staggerVariants}
             initial="hidden"
-            animate="show"
+            whileInView="show"
+            viewport={{ once: true }}
             className="pt-14">
-            <h1 className='text-4xl pb-8 text-center font-semibold '>Student Gallary</h1>
+            <h1 className='text-3xl sm:text-4xl pb-8 text-center font-semibold '>Student Gallary</h1>
 
             <div className="columns-2 md:columns-3 lg:columns-4 gap-4 mx-auto px-6 sm:px-10 pb-14">
                 {

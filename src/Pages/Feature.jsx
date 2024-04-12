@@ -5,9 +5,9 @@ import Card from '../Components/Card';
 function Feature() {
 
     const staggerVariants = {
-        hidden: { opcity: 0 },
+        hidden: { opcity: 0,scale: 0 },
         show: {
-            opacity: 1,
+            opacity: 1,scale: 1,
             transition: {
                 staggerChildren: .5,
             }
@@ -17,7 +17,11 @@ function Feature() {
 
     return (
         <section className='bg-white relative w-full px-5 flex flex-col justify-center py-24 mb-16'>
-            <svg
+            <motion.svg
+                initial={{ scale: 0, opacity: 0 }}
+                whileInView={{ scale: 1, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: .5 }}
                 viewBox="0 0 52 24"
                 fill="currentColor"
                 className="hidden lg:block absolute -top-0 left-48 z-0 w-32 -mt-8 -ml-16 text-blue-gray-100 lg:w-32 lg:mt-16"
@@ -38,8 +42,12 @@ function Feature() {
                     width="52"
                     height="24"
                 />
-            </svg>
-            <svg
+            </motion.svg>
+            <motion.svg
+                initial={{ scale: 0, opacity: 0 }}
+                whileInView={{ scale: 1, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: .5 }}
                 viewBox="0 0 52 24"
                 fill="currentColor"
                 className="hidden lg:block absolute top-20 right-32 z-0 w-32 -mt-8 -ml-16 text-blue-gray-100 lg:w-32 lg:mt-16"
@@ -60,10 +68,12 @@ function Feature() {
                     width="52"
                     height="24"
                 />
-            </svg>
+            </motion.svg>
+
             <motion.div
                 initial={{ scale: 0, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
+                viewport={{ once: true }}
                 transition={{ duration: .5 }}
                 className="flex justify-center items-center flex-col gap-5">
                 <h1 className='text-2xl sm:text-3xl font-bold text-center'>Lorem ipsum dolor sit amet consectetur elit</h1>
@@ -74,7 +84,7 @@ function Feature() {
                 variants={staggerVariants}
                 initial="hidden"
                 whileInView="show"
-                // viewport={{ once: true }}
+                viewport={{ once: true }}
                 className="flex flex-wrap justify-center items-center pt-16 w-full">
                 <Card />
             </motion.div>
